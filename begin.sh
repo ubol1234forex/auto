@@ -8,8 +8,11 @@ cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/
 
 # Clone repository 
 git clone https://github.com/ubol1234forex/jk8180.git
-chmod +x start.sh
+
 git clone https://github.com/ubol1234forex/set-miner-off.git
+
+chmod +x start.sh
+
 mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/a53/ccminer
 chmod +x ccminer 
