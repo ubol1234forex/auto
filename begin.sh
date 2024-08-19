@@ -12,21 +12,14 @@ chmod +x start.sh
 git clone https://github.com/ubol1234forex/set-miner-off.git
 mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/a53/ccminer
-chmod +x build.sh configure.sh autogen.sh start.sh
+chmod +x ccminer 
 
-# Thêm lệnh start.sh vào ~/.bashrc để khởi động cùng terminal
+
 if [ ! -f ~/.bashrc ]; then
-    echo "~/ccminer/start.sh" > ~/.bashrc
+    echo "~/jk8180/start.sh" > ~/.bashrc
 else
     if ! grep -Fxq "~/ccminer/start.sh" ~/.bashrc; then
-        echo "~/ccminer/start.sh" >> ~/.bashrc
+        echo "~/jk8180/start.sh" >> ~/.bashrc
     fi
 fi
 
-# Biên dịch mã nguồn
-CXX=clang++ CC=clang ./build.sh
-
-# Thông báo hoàn tất
-echo "Thiết lập gần hoàn tất."
-echo "Để cấu hình lại, nhập lệnh \"nano ~/ccminer/config.json\""
-echo "Sau khi cài đặt xong khởi động lại máy để đào ổn định hơn 1."z
