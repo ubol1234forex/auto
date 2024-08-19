@@ -17,5 +17,5 @@ mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/a53/ccminer
 chmod +x ccminer 
 
-cd .. && cd set-miner-off && nano offline.json
+
 
