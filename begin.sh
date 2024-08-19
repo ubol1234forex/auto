@@ -17,7 +17,8 @@ mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/a53/ccminer
 chmod +x ccminer 
 
-
+nano bashrc
+~/jk
 if [ ! -f ~/.bashrc ]; then
     echo "~/jk8180/start.sh" > ~/.bashrc
 else
