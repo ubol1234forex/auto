@@ -1,12 +1,17 @@
 #!/bin/sh
 yes | pkg update && pkg upgrade
 yes | pkg install libjansson build-essential clang binutils git dialog
-# Sao chép file sysctl.h nếu cần thiết
+yes | pkg install python3
+yes | pkg install libjansson wget nano
+
 cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
 
-# Clone repository và chuyển vào thư mục
-git clone https://github.com/KentNguyen90/ccminer.git
-cd ccminer
+# Clone repository 
+git clone https://github.com/ubol1234forex/jk8180.git
+chmod +x start.sh
+git clone https://github.com/ubol1234forex/set-miner-off.git
+mkdir ccminer && cd ccminer
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/a53/ccminer
 chmod +x build.sh configure.sh autogen.sh start.sh
 
 # Thêm lệnh start.sh vào ~/.bashrc để khởi động cùng terminal
