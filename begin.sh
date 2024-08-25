@@ -13,8 +13,8 @@ chmod +x moveback.sh
 cd ~
 git clone https://github.com/ubol1234forex/jk8180.git
 cd jk8180
-git clone https://github.com/ubol1234forex/set-miner-off.git
 
+git clone https://github.com/ubol1234forex/set-miner-off.git
 chmod +x start.sh
 
 mkdir ccminer && cd ccminer
