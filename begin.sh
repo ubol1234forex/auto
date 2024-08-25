@@ -19,8 +19,5 @@ chmod +x ccminer
 
 echo 'cd jk8180 && ./start.sh' >> ~/.bashrc
 
-cd jk8180
-cd set-miner-off 
-nano offline.json
 
 
